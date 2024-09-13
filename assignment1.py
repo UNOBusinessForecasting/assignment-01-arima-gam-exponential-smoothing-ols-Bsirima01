@@ -49,6 +49,7 @@ print(modelFit.summary())
 
 # Forecast for the test period (744 hours)
 pred = modelFit.forecast(steps=744)
+pred = pred.values
 pred
 
 # Evalution of model 
