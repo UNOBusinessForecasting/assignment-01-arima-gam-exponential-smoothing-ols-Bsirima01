@@ -49,7 +49,9 @@ print(modelFit.summary())
 
 #Forecast for the test period (744 hours)
 pred = modelFit.forecast(steps=744)
-pred
+# Ensure that 'pred' is a list or array of 744 numerical values
+if len(pred) == 744:
+    print("Prediction consists of 744 values as expected.")
 
 #Evalution of model
 test_data['preicted_mean']= pred
