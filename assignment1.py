@@ -1,4 +1,4 @@
-pip install pygam pandas matplotlib
+
 import pandas as pd
 import numpy as np
 from pygam import LinearGAM, s
